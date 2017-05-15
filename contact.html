@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="icon" href="Images/favicon2.png">
+	<title> Solent pizza Contact </title>
+	
+	<script type="text/javascript">
+	
+	function check_info(){
+		var FirstName = document.getElementById('FirstName').value;
+		var LastName = document.getElementById('FirstName').value;
+		
+	if(FirstName=="" || LastName==""){
+		alert('Please fill in the first and last name');
+		return false;
+	}
+	else{
+		return true;
+	}
+	
+}
+
+	</script>	
+</head> 
+	<div id = "wrapper">
+			<h1> Solent Pizza </h1>  
+			<h2 class="sub-heading">THE BEST PIZZA IN SOUTHAMPTON!</h2>
+			<h3 class="sub-heading">WE ARE OPEN FROM 11:00am - 12:30am </h3>
+		<div id ="header">
+			<ul>
+			<li> <a href=>Index </a></li>
+			<li> <a href=>Order </a></li>
+			<li> <a href=>Contact </a></li>
+			</ul>
+		</div
+		<div id ="pizza2">
+			<img src="Images/rsz_pizza2.jpg" onmouseover="this.src='Images/pizza2_grey.jpg'" onmouseout="this.src='Images/rsz_pizza2.jpg'" />
+		</div>
+	<body>
+	
+		<form onsubmit="check_info();">
+			<fieldset>	
+				 
+				<label> First Name: </label> <input type="text" name="FirstName" id="FirstName"  placeholder="e.g. John"> > 
+					<br/>
+				<label> Last Name: </label> <input type="text" name="LastName" id="LastName" placeholder="e.g. smith"> > 
+					<br/>
+				<label> Email: </label>
+				 <input type="text" name="Email" id="email" placeholder="e.g. JohnSmith@hotmail.com"> 
+					<br/>
+				<label>Phone Number:</label>
+					<input id="phoneNumber" type="text" name="Phone Number" placeholder="e.g. 07506700953"> 
+					<br/>
+				<label> Message: </label>
+					<textarea id="Message" name="message" placeholder="e.g. make it crispy"  style="width:300px"></textarea>
+			<input type="submit">
+			</fieldset>
+			</form>	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2991.8209319882585!2d-1.404147087479951!3d50.90870395610395!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b3d2a7c433db059!2sSouthampton+Solent+University!5e0!3m2!1sen!2suk!4v1494796042700" 
+				width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<footer>
+		<p> Solent Pizza ™ </p>
+		<div class="footer">
+				<p id="date"></p>
+				<script>
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toUTCString();
+				</script>
+			</div>
+	</footer>
+		</div> <!-- end #wrapper -->
+</body>	
+	
+	
+    
+
+	
+	
+	
+	
+	
+	<!-- create a slideshow of images -->

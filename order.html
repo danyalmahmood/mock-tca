@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="order.css">
+    <link rel="icon" href="Images/favicon2.png">
+	<title> Solent pizza Order</title>
+	
+	<script type="text/javascript" src="order.js"></script>
+</head> 
+	<body onload="main()">
+		<div id = "wrapper">
+			<h1> Solent Pizza </h1>  
+			<h2 class="sub-heading">THE BEST PIZZA IN SOUTHAMPTON!</h2>
+			<h3 class="sub-heading">WE ARE OPEN FROM 11:00am - 12:30am </h3>
+		<div id ="header">
+			<ul>
+			<li> <a href=>Index </a></li>
+			<li> <a href=>Order </a></li>
+			<li> <a href=>Contact </a></li>
+			</ul>
+		</div>
+		<div id="pizza">
+			<img src="Images/rsz_pizza.jpg" onmouseover="this.src='Images/pizza_grey.jpg'" onmouseout="this.src='Images/rsz_pizza.jpg'" />
+		</div>
+		<fieldset>
+		<form  onchange="main()" id="pizzaBase">
+				<p>Please selct your dessired Pizza base</p>
+			<label for="basesize"><p><input id="pizza" type="radio" name="pizzaBase" data-price="5"  value="small" >Small <span class="price">5</span></p>
+				<p id="baseRequiredError" style="display: none">  Required </p>
+				
+				<p><input id="pizza" type="radio"  name="pizzaBase" data-price ="7.50" value="medium" >Medium <span class="price">7.50</span></p>
+				<p><input id="pizza" type="radio"  name="pizzaBase" data-price ="10" value="large" >Large <span class="price">10</span></p>
+				<p><input id="pizza" type="radio" name="pizzaBase" data-price ="12" value="xLarge">Extra Large <span class="price">12</span></p>
+			</label>
+		</fieldset>	
+		<fieldset>
+				<p>You can select as many toppings as you like (20 pence each topping)</p>
+				<label for="topping"><p><input type="radio" name="topping"  value="cheese">Cheese <span class="price">0.20</span></p>
+				<p><input type="radio" name="topping"  value="pepperoni">Pepperoni <span class="price">0.20</span></p>
+				<p><input type="radio" name="topping"  value="ham">Ham <span class="price">0.20</span></p>
+				<p><input type="radio" name="topping"  value="pineapple">Pineapple <span class="price">0.20</span></p>
+				<p><input type="radio" name="topping"  value="pineapple"> Sweetcorn <span class="price">0.20</span></p>
+				<p><input type="radio" name="topping"  value="pineapple"> Mushroom <span class="price">0.20</span></p>
+				<p><input type="radio" name="topping"  value="pineapple"> Onion <span class="price">0.20</span></p>
+				</label>
+		</fieldset>	
+		<fieldset>
+				<p>Extras</p>
+				<p><input type="radio"   value="extras"> Chips <span class="price">1.50</span></p>	
+				<p><input type="radio"   value="extras"> Garlic Bread <span class="price">2.50</span></p>
+				<p><input type="radio"   value="extras"> Wedges <span class="price">2.00</span></p>
+		</fieldset>
+		<fieldset>
+			 Delivery information
+			<p> Address Line 1: 
+			<input type ="text" > </p>
+			<p> Post Code :
+			<input type ="text" > </p>
+		</fieldset>
+			<input type="submit" value="Submit">      <input type="Reset" value="Reset">
+		</form>
+		
+		<div id="total"> Total Price of goods:</div>
+			<div id='myform_errorloc' class='error_strings'></div>
+			
+		
+	<footer>
+		<p> Solent Pizza </p>
+			<div class="footer">
+				<p id="date"></p>
+				<script>
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toUTCString();
+				</script>
+			</div>
+	</footer>
+		</div> <!-- end #wrapper -->
+</body>	
+	
+	
+    
+
+	
+	
+	
+	
+	
+	<!-- create a slideshow of images -->

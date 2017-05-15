@@ -1,0 +1,30 @@
+h1{
+	font-size:50px;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+	background-color: #ff7f50; 
+}
+label{
+	font-size:20px;
+}
+#wrapper{
+	margin: auto;
+	width: 950px;
+	text-align: center;
+	border:1px solid black;
+}
+ul {
+    list-style-type: none;
+    width: 100px;
+	border:1px solid black;
+	margin-left
+	
+}
+
+li a {
+    display: block;
+    padding: 4px 16px;
+	height: 50px;
+    
+}

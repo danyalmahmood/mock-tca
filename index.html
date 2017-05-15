@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="Images/favicon2.png">
+	<title> Solent pizza Home Page </title>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div> 	
+		<div id = "wrapper">
+			<h1> Solent Pizza </h1>  
+			<h2 class="sub-heading">THE BEST PIZZA IN SOUTHAMPTON!</h2>
+			<h3 class="sub-heading">WE ARE OPEN FROM 11:00am - 12:30am </h3>
+		<div id ="header">
+			<ul>
+			<li> <a href="../index.html"> Index </a></li>
+			<li> <a href="../order.html">Order </a></li>
+			<li> <a href="../contact.html">Contact </a></li>
+			</ul>
+		</div>
+		<div id="pizza1">
+			<img src="Images/piiiza.jpg"  height="150px" width="300px" onmouseover="this.src='Images/piiiza.2.jpg'" onmouseout="this.src='Images/piiiza.jpg'" />
+		</div>
+		<div id ="pizza2">
+			<img src="Images/rsz_pizza2.jpg" height="150px" width="300px" onmouseover="this.src='Images/pizza2_grey.jpg'" onmouseout="this.src='Images/rsz_pizza2.jpg'" />
+		</div>
+			<div id ="Solent">
+					<p> This is the offical site for Solent Pizza's. We are happy to present our pizza's to you with care. The Pizza company you can trust.</p> 
+			</div>	
+	<footer>
+	<div class="footer">
+				<p id="date"></p>
+				<script>
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toUTCString();
+				</script>
+			</div>
+		<p> Solent Pizza </p>
+	</footer>
+		</div> <!-- end #wrapper -->
+</body>	
+	
+	
+    
+
+	
+	
+	
+	
+	
+	<!-- create a slideshow of images -->
